@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="android.test.weatherforecast.MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="60dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Bogota"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:background="#000"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <ImageView
+            android:id="@+id/imgBg"
+            android:visibility="visible"
+            android:src="@drawable/clouds"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:alpha="0.7"
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/temperatureNum"
+
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:text="1000*"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_toEndOf="@id/temperatureNum"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:text="1000*"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_below="@id/cover"
+        android:id="@+id/daysData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#D7D7D7">
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="40 MPH"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/precipProbability"
+            android:layout_toEndOf="@id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="40 MPH"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_toEndOf="@id/precipProbability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="40 MPH"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/teperatureDay1"
+            android:layout_below="@id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="nn"
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/teperatureDay2"
+            android:layout_toEndOf="@id/teperatureDay1"
+            android:layout_below="@id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/teperatureDay3"
+            android:layout_toEndOf="@id/teperatureDay2"
+            android:layout_below="@id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/teperatureDay4"
+            android:layout_toEndOf="@id/teperatureDay3"
+            android:layout_below="@id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/teperatureDay5"
+            android:layout_toEndOf="@id/teperatureDay4"
+            android:layout_below="@id/wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
